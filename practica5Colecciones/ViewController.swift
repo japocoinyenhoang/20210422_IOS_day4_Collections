@@ -13,7 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private let miColeccion = ["Chaqueta", "Abrigo", "Pantalon"]
-    var elementoTabla: Int?
+    var elementoTablaNumero: Int?
+    var elementoTablaTexto: String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -61,8 +64,8 @@ extension ViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //celda pulsada por el usuario x eso hemos elegido didSelectRowAt y guardada en la variable elemento Tabla para poder mandarlo a otra view
         
-        elementoTabla = indexPath.row
-        
+        elementoTablaNumero = indexPath.row
+        elementoTablaTexto = miColeccion[indexPath.row]
         performSegue(withIdentifier: "sVCDetalle", sender: self)
     }
     
@@ -70,7 +73,9 @@ extension ViewController : UITableViewDelegate {
         if segue.identifier == "sVCDetalle" {
             if let destino = segue.destination as?
                 VCDetalle{
-                destino.elemento = elementoTabla
+                destino.elementoNumero = elementoTablaNumero
+                destino.elementoTexto = elementoTablaTexto
+                
             }
         }
     }

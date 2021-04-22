@@ -8,14 +8,15 @@
 import UIKit
 
 class VCDetalle: UIViewController {
-    var elemento: Int?
+    var elementoNumero: Int?
+    var elementoTexto: String?
     @IBOutlet weak var text_celda: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if elemento != nil {
-            text_celda.text = String(elemento!)
+        if elementoNumero != nil {
+            text_celda.text = String(elementoNumero!) + "  " + String (elementoTexto!)
         }
        
     }

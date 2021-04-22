@@ -65,8 +65,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYX-G5-Pfu">
-                                <rect key="frame" x="124" y="219" width="167" height="183"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <rect key="frame" x="79" y="217" width="262" height="142"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -74,10 +74,10 @@
                         <viewLayoutGuide key="safeArea" id="mnB-Os-G0i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mnB-Os-G0i" firstAttribute="bottom" secondItem="xYX-G5-Pfu" secondAttribute="bottom" constant="460" id="jPX-sd-UpG"/>
-                            <constraint firstItem="xYX-G5-Pfu" firstAttribute="top" secondItem="mnB-Os-G0i" secondAttribute="top" constant="131" id="rLr-Xo-EUp"/>
-                            <constraint firstItem="mnB-Os-G0i" firstAttribute="trailing" secondItem="xYX-G5-Pfu" secondAttribute="trailing" constant="123" id="rm2-bb-KHT"/>
-                            <constraint firstItem="xYX-G5-Pfu" firstAttribute="leading" secondItem="mnB-Os-G0i" secondAttribute="leading" constant="124" id="whP-hr-Dkn"/>
+                            <constraint firstItem="xYX-G5-Pfu" firstAttribute="leading" secondItem="mnB-Os-G0i" secondAttribute="leading" constant="79" id="4LI-B8-eMu"/>
+                            <constraint firstItem="mnB-Os-G0i" firstAttribute="trailing" secondItem="xYX-G5-Pfu" secondAttribute="trailing" constant="73" id="7Wo-Fb-Dn3"/>
+                            <constraint firstItem="mnB-Os-G0i" firstAttribute="bottom" secondItem="xYX-G5-Pfu" secondAttribute="bottom" constant="503" id="9rG-x8-QVo"/>
+                            <constraint firstItem="xYX-G5-Pfu" firstAttribute="top" secondItem="mnB-Os-G0i" secondAttribute="top" constant="129" id="B5e-6X-zvm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XdD-0U-zXZ"/>
