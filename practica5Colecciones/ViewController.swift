@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private let miColeccion = ["Chaqueta", "Abrigo", "Pantalon"]
-    
+    var elementoTabla: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -59,7 +59,19 @@ extension ViewController : UITableViewDataSource {
 extension ViewController : UITableViewDelegate {
     //quiero la celda seleccionada
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //celda pulsada por el usuario x eso hemos elegido didSelectRowAt
-        print(indexPath.row)
+        //celda pulsada por el usuario x eso hemos elegido didSelectRowAt y guardada en la variable elemento Tabla para poder mandarlo a otra view
+        
+        elementoTabla = indexPath.row
+        
+        performSegue(withIdentifier: "sVCDetalle", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sVCDetalle" {
+            if let destino = segue.destination as?
+                VCDetalle{
+                destino.elemento = elementoTabla
+            }
+        }
     }
 }

@@ -15,6 +15,7 @@
 		B210AF552631CC4E00164DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B210AF532631CC4E00164DED /* LaunchScreen.storyboard */; };
 		B210AF602631CC4F00164DED /* practica5ColeccionesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210AF5F2631CC4F00164DED /* practica5ColeccionesTests.swift */; };
 		B210AF6B2631CC4F00164DED /* practica5ColeccionesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210AF6A2631CC4F00164DED /* practica5ColeccionesUITests.swift */; };
+		B210AFBE2631E85400164DED /* VCDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210AFBD2631E85400164DED /* VCDetalle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B210AF662631CC4F00164DED /* practica5ColeccionesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practica5ColeccionesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B210AF6A2631CC4F00164DED /* practica5ColeccionesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practica5ColeccionesUITests.swift; sourceTree = "<group>"; };
 		B210AF6C2631CC4F00164DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B210AFBD2631E85400164DED /* VCDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetalle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B210AF482631CC4E00164DED /* AppDelegate.swift */,
 				B210AF4A2631CC4E00164DED /* SceneDelegate.swift */,
 				B210AF4C2631CC4E00164DED /* ViewController.swift */,
+				B210AFBD2631E85400164DED /* VCDetalle.swift */,
 				B210AF4E2631CC4E00164DED /* Main.storyboard */,
 				B210AF512631CC4E00164DED /* Assets.xcassets */,
 				B210AF532631CC4E00164DED /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				B210AF4D2631CC4E00164DED /* ViewController.swift in Sources */,
 				B210AF492631CC4E00164DED /* AppDelegate.swift in Sources */,
+				B210AFBE2631E85400164DED /* VCDetalle.swift in Sources */,
 				B210AF4B2631CC4E00164DED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
