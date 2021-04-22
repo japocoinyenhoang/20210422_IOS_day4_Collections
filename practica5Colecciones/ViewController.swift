@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private let miColeccion = ["Chaqueta", "Abrigo", "Pantalon"]
+    private let miColeccion2 = ["Zapatos", "Chanclas", "Deportivas"]
+    private let miColeccion3 = ["Gorro", "Gorra", "Sombrero"]
     var elementoTablaNumero: Int?
     var elementoTablaTexto: String?
     
@@ -40,6 +42,16 @@ extension ViewController : UITableViewDataSource {
         return miColeccion.count
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+   /* Asi nos devuelve el array que le hemos pasado tres veces, en la lista
+     func numberOfSections(in tableView: UITableView) -> Int {
+        // indicamos el numero de secciones;
+        return 3
+    }
+ */
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // aqui indico cada una una de las celdas
         let celda = UITableViewCell(style: .default, reuseIdentifier: "miCelda")
@@ -50,12 +62,16 @@ extension ViewController : UITableViewDataSource {
         celda.textLabel?.font = UIFont.systemFont(ofSize: 40, weight: UIFont.Weight.medium)
         
         
-        //icono de ka cekda
+        //icono de la celda
         celda.accessoryType = .disclosureIndicator
         
         //introducir los datos de mi celda
-        celda.textLabel?.text = miColeccion [indexPath.row]
+        //celda.textLabel?.text = miColeccion [indexPath.row]
         return celda
+        
+        if indexPath.section == 0 {celda.textLabel?.text = miColeccion [indexPath.row]}
+        if indexPath.section == 1 {celda.textLabel?.text = miColeccion2 [indexPath.row]}
+        if indexPath.section == 2 {celda.textLabel?.text = miColeccion3 [indexPath.row]}
     }
 }
 
